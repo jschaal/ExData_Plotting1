@@ -2,10 +2,12 @@
 #
 #   Create second assignment plot
 
+#   Execute R Script common to all plots used to create Power Data Subset
+#   Please see the script ReadPowerData.R included in this repository
+source("ReadPowerData.R")
 
-##  Load Power Subset data previously created by a common  utility scipt called ReadPowerData.R
-##  Please see the script ReadPowerData.R included in this repository
-load("data/subPowerData.RData")
+#   Optionally and more efficiently, Load Power Subset data previously created by ReadPowerData.R
+#   load("data/subPowerData.RData")  
 
 # open PNG graphic device
 png(filename="plot2.png",width=480,height = 480)
