@@ -1,9 +1,12 @@
 #   ReadPowerData.R
 #   Utility script to read, convert,  extract and save a subset of data from
 #   a large master power consumption text file
+#
 #   Called by each plot R script to generate subset of Power Data used to generate plots
 #   Also saves converted data to allow data to be loaded by plot scripts vs regenerating each time
-
+#
+#   The script creates a dataset called subPowerData which is then utilized by all of the plots in
+#   this assignment
 
 dataToRead <- "data/household_power_consumption.txt"
 
